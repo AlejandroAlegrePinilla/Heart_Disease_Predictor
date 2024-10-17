@@ -1,4 +1,4 @@
-# Heart Disease Predictor
+# Heart Disease Predictor <3
 
 https://hd-predictor.streamlit.app/
 
@@ -52,9 +52,3 @@ The dataset used in this project is sourced from the UCI Machine Learning Reposi
 3.-Model Training: The K-Nearest Neighbors algorithm is employed to train the model on the prepared dataset.
 
 4.- Prediction: Users can input various health metrics to receive a prediction about the likelihood of heart disease.
-
-### Here you can see a sample of the data in PowerBI
-
-![image](https://github.com/user-attachments/assets/483cf57f-f6ec-46bc-a646-ddd48207068d)
-
-
