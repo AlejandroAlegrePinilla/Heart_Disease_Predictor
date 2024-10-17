@@ -6,18 +6,6 @@ import numpy as np
 model = joblib.load('modelo_logistic_regresion.pkl')
 scaler = joblib.load('scaler.pkl')
 
-# Define the background of the pag.weg
-page_bg_img = """
-<style>
-[data-testid="stAppViewContainer"] {
-bacground-image: url(https://impcna.com/wp-content/uploads/2021/04/2163952.jpg);
-background-size: cover;
-}
-</style>
-"""
-
-st.markdown(page_bg_img, unsafe_allow_html=True)
-
 # APP Tittle
 st.title('Heart Disease Predictor')
 
