@@ -1,5 +1,7 @@
 # Heart Disease Predictor <3
 
+Link to StreamLit APP:
+
 https://hd-predictor.streamlit.app/
 
 ## Overview
@@ -8,7 +10,8 @@ The Heart Disease Predictor is a machine learning project designed to predict th
 
 ### Here you can see a sample of the data in PowerBI
 
-![image](https://github.com/user-attachments/assets/483cf57f-f6ec-46bc-a646-ddd48207068d)
+![image](https://github.com/user-attachments/assets/df92e676-6330-408a-b112-bf6257dba6eb)
+
 
 ## Technologies Used
 
@@ -19,7 +22,6 @@ The Heart Disease Predictor is a machine learning project designed to predict th
 - Matplotlib
 - Seaborn
 - Streamlit
-- Imbalanced-learn (SMOTE)
 - PowerBI
 
 ## Dataset
