@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # Load the model and the scaler.
-model = joblib.load('modelo_linear_regresion.pkl')
+model = joblib.load('modelo_logistic_regresion.pkl')
 scaler = joblib.load('scaler.pkl')
 
 # APP Tittle
