@@ -16,7 +16,7 @@ background-size: cover;
 </style>
 """
 
-st.mardown(page_bg_img, unsafe_allow_html=True)
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # APP Tittle
 st.title('Heart Disease Predictor')
