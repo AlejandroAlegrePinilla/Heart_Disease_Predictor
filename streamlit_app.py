@@ -2,6 +2,17 @@ import streamlit as st
 import joblib
 import numpy as np
 
+# Define the background of the pag.weg
+
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] {
+bacground-image: url(https://impcna.com/wp-content/uploads/2021/04/2163952.jpg);
+background-size: cover;
+}
+</style>
+"""
+
 # Load the model and the scaler.
 model = joblib.load('modelo_logistic_regresion.pkl')
 scaler = joblib.load('scaler.pkl')
