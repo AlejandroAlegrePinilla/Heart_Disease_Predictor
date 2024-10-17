@@ -25,7 +25,7 @@ exercise_produced_angina = st.number_input('Excercise produced Angina (No = 0 or
 unlevel_ST = st.number_input('Unlevel ST', min_value=0.0, max_value=10.0, value=1.0)
 segment_st_in_ecg = st.number_input('Segment ST in ECG (0-2)', min_value=0, max_value=2, value=1)
 main_vessels_coloured_by_fluorescence = st.number_input('Main vessels coloured by Fluorescence (0-3)', min_value=0, max_value=3, value=0)
-thalium = st.number_input('Thalium (1-3)', min_value=1, max_value=3, value=2)
+thalium = st.number_input('Thallium myocardial perfusion imaging (MPI) (1-3)', min_value=1, max_value=3, value=2)
 
 # Prediction
 if st.button('Predict'):
