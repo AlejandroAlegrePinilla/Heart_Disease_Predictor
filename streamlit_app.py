@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # Load the model and the scaler.
-model = joblib.load('modelo_knn.pkl')
+model = joblib.load('modelo_nn.pkl')
 scaler = joblib.load('scaler.pkl')
 
 # APP Tittle
