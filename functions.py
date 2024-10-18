@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 
+
 def load_and_standardize_df(url):
     # Load the DataFrame from the URL
     df = pd.read_csv(url)
