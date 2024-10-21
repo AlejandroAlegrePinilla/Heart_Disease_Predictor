@@ -6,7 +6,7 @@ import numpy as np
 model = joblib.load('model_app.pkl')
 scaler = joblib.load('scaler.pkl')
 
-# CSS background image with direct link from Google Drive
+# CSS background image using Google Drive link or an alternative link
 page_bg_img = '''
 <style>
 .stApp {
@@ -25,12 +25,9 @@ st.title('Heart Disease Predictor')
 st.write('This app predicts if a patient has heart disease.')
 
 # User Inputs
-with st.expander("ℹ️ Age Information", expanded=False):
-    st.write("The age of the patient. Typically, heart disease risk increases with age.")
+
 age = st.number_input('Age', min_value=1, max_value=120, value=45)
 
-with st.expander("ℹ️ Gender Information", expanded=False):
-    st.write("Select the gender of the patient.")
 sex = st.selectbox('Gender', options=[0, 1], format_func=lambda x: 'Female' if x == 0 else 'Male')
 
 with st.expander("ℹ️ Chest Pain Information", expanded=False):
