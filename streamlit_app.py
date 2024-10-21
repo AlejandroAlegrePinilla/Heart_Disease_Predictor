@@ -18,7 +18,7 @@ with st.expander("ℹ️ Age Information", expanded=False):
 age = st.number_input('Age', min_value=1, max_value=120, value=45)
 
 with st.expander("ℹ️ Gender Information", expanded=False):
-    st.write("Select the gender of the patient: 0 for Female, 1 for Male.")
+    st.write("Select the gender of the patient.")
 sex = st.selectbox('Gender', options=[0, 1], format_func=lambda x: 'Female' if x == 0 else 'Male')
 
 with st.expander("ℹ️ Chest Pain Information", expanded=False):
