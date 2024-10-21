@@ -6,11 +6,11 @@ import numpy as np
 model = joblib.load('model_app.pkl')
 scaler = joblib.load('scaler.pkl')
 
-# CSS backgroung image
+# CSS background image with direct link from Google Drive
 page_bg_img = '''
 <style>
 .stApp {
-background-image: url("https://drive.google.com/file/d/1PGCSkMau2WCdtUXRvYsc-O4hWIK5AsK2/view?usp=drive_link");
+background-image: url("https://drive.google.com/uc?export=view&id=14jql81YDCDNrAMqs6JH1NBO7hJp7dwP3");
 background-size: cover;
 }
 </style>
