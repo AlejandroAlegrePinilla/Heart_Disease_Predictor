@@ -6,6 +6,18 @@ import numpy as np
 model = joblib.load('model_app.pkl')
 scaler = joblib.load('scaler.pkl')
 
+# CSS backgroung image
+page_bg_img = '''
+<style>
+.stApp {
+background-image: url("https://www.google.com/imgres?q=heart%20doctor&imgurl=https%3A%2F%2Fwww.kezmed.com%2Fwp-content%2Fuploads%2Fheart-health-2001.jpg&imgrefurl=https%3A%2F%2Fwww.kezmed.com%2Fblog%2F5-daily-tips-from-a-heart-care-doctor%2Findex.php&docid=RHSzBlBGIiSEEM&tbnid=dnafj0aI7AtCeM&vet=12ahUKEwjg8unq_p6JAxW0SaQEHUVAIP0QM3oECE0QAA..i&w=600&h=400&hcb=2&ved=2ahUKEwjg8unq_p6JAxW0SaQEHUVAIP0QM3oECE0QAA");
+background-size: cover;
+}
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 # APP Tittle
 st.title('Heart Disease Predictor')
 
