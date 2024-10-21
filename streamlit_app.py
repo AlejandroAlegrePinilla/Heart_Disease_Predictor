@@ -10,7 +10,7 @@ scaler = joblib.load('scaler.pkl')
 page_bg_img = '''
 <style>
 .stApp {
-background-image: url("https://drive.google.com/uc?export=view&id=14jql81YDCDNrAMqs6JH1NBO7hJp7dwP3.jpg");
+background-image: url("https://drive.google.com/uc?export=view&id=14jql81YDCDNrAMqs6JH1NBO7hJp7dwP3");
 background-size: cover;
 }
 </style>
