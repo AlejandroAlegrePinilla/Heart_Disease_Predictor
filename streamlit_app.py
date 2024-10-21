@@ -35,7 +35,7 @@ sex = st.selectbox('Gender', options=[0, 1], format_func=lambda x: 'Female' if x
 
 with st.expander("ℹ️ Chest Pain Information", expanded=False):
     st.write("Chest pain is classified into four categories:\n"
-             "0: Typical angina, 1: Atypical angina, 2: Non-anginal pain, 3: Asymptomatic.")
+             "0: no pain, 3: acute pain.")
 chest_pain = st.number_input('Intensity of Chest Pain (0-3)', min_value=0, max_value=3, value=1)
 
 with st.expander("ℹ️ Arterial Pressure Information", expanded=False):
@@ -47,8 +47,15 @@ with st.expander("ℹ️ Cholesterol Information", expanded=False):
 total_cholesterol = st.number_input('Total Cholesterol', min_value=100, max_value=600, value=200)
 
 with st.expander("ℹ️ Blood Glucose Information", expanded=False):
-    st.write("Indicates whether the patient's fasting blood sugar is higher than 120 mg/dL (0 = No, 1 = Yes).")
-blood_glucose = st.number_input('Fasting blood sugar', min_value=0, max_value=1, value=0)
+    st.write("Indicates whether the patient's fasting blood sugar is higher than 120 mg/dL.")
+blood_glucose = st.selectbox(
+    'Fasting blood sugar > 120 mg/dL',
+    options=['No', 'Yes'],
+    index=0  # Set ‘No’ as default option
+)
+
+# Convert ‘No’ and ‘Yes’ to 0 and 1 for the prediction
+blood_glucose = 1 if blood_glucose == 'Yes' else 0
 
 with st.expander("ℹ️ ECG Information", expanded=False):
     st.write("Electrocardiogram readings in rest. Possible values are 0 (normal), 1 (having ST-T wave abnormality), 2 (left ventricular hypertrophy).")
@@ -59,8 +66,15 @@ with st.expander("ℹ️ Heart Rate Information", expanded=False):
 max_heart_rate = st.number_input('Maximun Heart Rate', min_value=60, max_value=220, value=150)
 
 with st.expander("ℹ️ Angina Information", expanded=False):
-    st.write("Indicates if exercise-induced angina is present (0 = No, 1 = Yes).")
-exercise_produced_angina = st.number_input('Excercise produced Angina', min_value=0, max_value=1, value=0)
+    st.write("Indicates if exercise-induced angina is present.")
+exercise_produced_angina = st.selectbox(
+    'Exercise produced Angina',
+    options=['No', 'Yes'],
+    index=0  # Set ‘No’ as default option
+)
+
+# Convert ‘No’ and ‘Yes’ to 0 and 1 for the prediction
+exercise_produced_angina = 1 if exercise_produced_angina == 'Yes' else 0
 
 with st.expander("ℹ️ ST Depression Information", expanded=False):
     st.write("ST depression induced by exercise relative to rest in mm. Higher values may indicate coronary insufficiency.")
@@ -71,8 +85,8 @@ with st.expander("ℹ️ Segment ST Information", expanded=False):
 segment_st_in_ecg = st.number_input('Segment ST in ECG', min_value=0, max_value=2, value=1)
 
 with st.expander("ℹ️ Vessels Information", expanded=False):
-    st.write("Number of major vessels (0-3) colored by fluoroscopy. The higher the number, the greater the risk of heart disease.")
-main_vessels_coloured_by_fluorescence = st.number_input('Main vessels coloured by Fluorescence', min_value=0, max_value=3, value=0)
+    st.write("Number of major vessels (1-4) colored by fluoroscopy. Number of vessels WITHOUT obstruction.")
+main_vessels_coloured_by_fluorescence = st.number_input('Main vessels coloured by Fluorescence', min_value=1, max_value=4, value=1)
 
 with st.expander("ℹ️ Thallium Scan Information", expanded=False):
     st.write("Thallium scan score for myocardial perfusion imaging (MPI). 1 = normal, 2 = moderate defect, 3 = severe defect.")
