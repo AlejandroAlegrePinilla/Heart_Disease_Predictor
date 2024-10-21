@@ -36,11 +36,11 @@ total_cholesterol = st.number_input('Total Cholesterol', min_value=100, max_valu
 
 with st.expander("ℹ️ Blood Glucose Information", expanded=False):
     st.write("Indicates whether the patient's fasting blood sugar is higher than 120 mg/dL (0 = No, 1 = Yes).")
-blood_glucose = st.number_input('Fasting blood sugar > 120 mg/dl (No = 0 or Yes = 1)', min_value=0, max_value=1, value=0)
+blood_glucose = st.number_input('Fasting blood sugar', min_value=0, max_value=1, value=0)
 
 with st.expander("ℹ️ ECG Information", expanded=False):
     st.write("Electrocardiogram readings in rest. Possible values are 0 (normal), 1 (having ST-T wave abnormality), 2 (left ventricular hypertrophy).")
-electrocardiogram_on_rest = st.number_input('Electrocardiogram on Rest (0-2)', min_value=0, max_value=2, value=1)
+electrocardiogram_on_rest = st.number_input('Electrocardiogram on Rest', min_value=0, max_value=2, value=1)
 
 with st.expander("ℹ️ Heart Rate Information", expanded=False):
     st.write("Maximum heart rate achieved during exercise.")
@@ -48,7 +48,7 @@ max_heart_rate = st.number_input('Maximun Heart Rate', min_value=60, max_value=2
 
 with st.expander("ℹ️ Angina Information", expanded=False):
     st.write("Indicates if exercise-induced angina is present (0 = No, 1 = Yes).")
-exercise_produced_angina = st.number_input('Excercise produced Angina (No = 0 or Yes = 1)', min_value=0, max_value=1, value=0)
+exercise_produced_angina = st.number_input('Excercise produced Angina', min_value=0, max_value=1, value=0)
 
 with st.expander("ℹ️ ST Depression Information", expanded=False):
     st.write("ST depression induced by exercise relative to rest in mm. Higher values may indicate coronary insufficiency.")
@@ -56,15 +56,15 @@ unlevel_ST = st.number_input('Unlevel ST', min_value=0.0, max_value=10.0, value=
 
 with st.expander("ℹ️ Segment ST Information", expanded=False):
     st.write("ST segment values from the ECG. 0 = normal, 1 = mild abnormality, 2 = severe abnormality.")
-segment_st_in_ecg = st.number_input('Segment ST in ECG (0-2)', min_value=0, max_value=2, value=1)
+segment_st_in_ecg = st.number_input('Segment ST in ECG', min_value=0, max_value=2, value=1)
 
 with st.expander("ℹ️ Vessels Information", expanded=False):
     st.write("Number of major vessels (0-3) colored by fluoroscopy. The higher the number, the greater the risk of heart disease.")
-main_vessels_coloured_by_fluorescence = st.number_input('Main vessels coloured by Fluorescence (0-3)', min_value=0, max_value=3, value=0)
+main_vessels_coloured_by_fluorescence = st.number_input('Main vessels coloured by Fluorescence', min_value=0, max_value=3, value=0)
 
 with st.expander("ℹ️ Thallium Scan Information", expanded=False):
     st.write("Thallium scan score for myocardial perfusion imaging (MPI). 1 = normal, 2 = moderate defect, 3 = severe defect.")
-thalium = st.number_input('Thallium myocardial perfusion imaging (MPI) (1-3)', min_value=1, max_value=3, value=2)
+thalium = st.number_input('Thallium myocardial perfusion imaging (MPI)', min_value=1, max_value=3, value=2)
 
 # Prediction
 if st.button('Predict'):
