@@ -93,6 +93,6 @@ if st.button('Predict'):
     
     # Mostrar el resultado
     if prediction[0] == 1:
-        st.write('The patient CAN develop heart disease')
+        st.write('The patient MAY develop heart disease')
     else:
         st.write('The patient WILL NOT develop heart disease')
