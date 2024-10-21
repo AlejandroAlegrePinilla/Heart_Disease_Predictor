@@ -10,7 +10,7 @@ scaler = joblib.load('scaler.pkl')
 page_bg_img = '''
 <style>
 .stApp {
-background-image: url("https://imgur.com/SIABPud");
+background-image: url("https://i.imgur.com/SIABPud.jpeg");
 background-size: cover;
 }
 </style>
