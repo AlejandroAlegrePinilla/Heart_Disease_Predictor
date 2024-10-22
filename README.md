@@ -45,7 +45,7 @@ The dataset used in this project is sourced from the UCI Machine Learning Reposi
 - `unlevel_ST`: ST depression induced by exercise relative to rest
 - `segment_st_in_ecg`: Peak exercise ST segment
 - `main_vessels_coloured_by_fluorescence`: Number of major vessels colored by fluoroscopy
-- `thalium`: Thalassemia (1 = normal; 2 = fixed defect; 3 = reversible defect)
+- `thalium`: Thallium scan score for myocardial perfusion imaging (MPI). 1 = normal, 2 = moderate defect, 3 = severe defect.
 - `disease`: Diagnosis of heart disease (1 = presence; 0 = absence)
 
 ### How It Works
