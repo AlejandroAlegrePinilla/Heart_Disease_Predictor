@@ -12,6 +12,9 @@ The Heart Disease Predictor is a machine learning project designed to predict th
 
 ![image](https://github.com/user-attachments/assets/df92e676-6330-408a-b112-bf6257dba6eb)
 
+### Project presentation
+
+https://www.canva.com/design/DAGUR1dHBOs/MLchxCQ19MGWb5MIibbF5Q/edit?utm_content=DAGUR1dHBOs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 ## Technologies Used
 
@@ -51,6 +54,6 @@ The dataset used in this project is sourced from the UCI Machine Learning Reposi
 
 2.- Oversampling: Techniques like SMOTE are used to balance the dataset, ensuring that the model does not become biased towards the majority class.
 
-3.-Model Training: The K-Nearest Neighbors algorithm is employed to train the model on the prepared dataset.
+3.-Model Training: The training and selection of the model has been automated..
 
 4.- Prediction: Users can input various health metrics to receive a prediction about the likelihood of heart disease.
